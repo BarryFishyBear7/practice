@@ -22,9 +22,7 @@ print(correctLetters)
 
 while True:
 	guess = input("Guess a letter: ")
-	if len(guess) > 1:
-		print("Please choose a valid letter")
-	if guess not in alphabet:
+	if len(guess) > 1 or guess not in alphabet:
 		print("Please choose a valid letter")
 	if guess in word:
 		index = myList.index(str(guess))
